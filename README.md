@@ -40,6 +40,8 @@ You should now be able to edit the files in the `src` folder and see the changes
 ### Deploying the MP
 In order for us to view and grade your MP, you will be deploying your webpage with Gitlab's pipelines. Due to [abuses with Gitlab's free pipeline](https://forum.gitlab.com/t/concern-about-gitlab-asking-for-credit-card/54479), you will need to provide a valid credit/debit card to verify you are a real user before deploying. You may see a $1 transaction on your account, don't panic, Gitlab does this to verify the card, **but no money will be transferred**.
 
+To test your code locally, in the file `package.json`, replace `"start": "export NODE_OPTIONS=--openssl-legacy-provider; webpack-dev-server --open` with `"start": "webpack-dev-server --open"`. However, DO NOT COMMIT these changes to your repository, as this will affect your code's ability to deploy. 
+
 ## Grading Breakdown
 This assignment is worth 5% of your final grade. Breakdown is as follows:
 1. Correct HTML tags and content (2%)
@@ -67,3 +69,9 @@ git remote add origin git@gitlab.com:<your-gitlab-username>/mp0.git
 4. `.gitlab-ci.yml` file automatically makes a Gitlab CI pipeline run to deploy your code. After the pipeline finishes, your site should be live at `https://<your-gitlab-username>.gitlab.io/mp0`. **It may take up to 10-30 minutes for the site to go live after the first deployment.**
 5. Invite `uiucwp` as a collaborator. This should be as a **reporter**, not as a *guest*, otherwise we can't see your code.
 6. Fill out and submit the form [here](https://forms.gle/1c6LBqsQCupg3iaK9).
+
+## Large Language Model (LLM) Usage Policy
+
+We acknowledge the transformative potential of LLMs in generating code; however, we are still in the nascent stages of understanding how to embed LLMs in developer workflows to write code more efficiently while maintaining quality. Therefore, we will not be teaching students directly how to use LLMs to develop web applications.
+
+As part of this class, we *do* encourage students to experiment with LLM services such as OpenAI's ChatGPT to generate source code for MPs. If LLMs are used to generate code for an MP, students *must* (1) submit their chatlogs along with their source code, and (2) answer survey questions related to their experience using LLMs in the grading form. Failure to do this will be a violation of the academic integrity policy of this course.
