@@ -1,6 +1,12 @@
 my chat logs:
 https://chatgpt.com/share/e/68bf9780-88d4-8003-8aab-84f8a97709b9
-
+took this word for word:
+if (fold.style.display === "none") {
+      fold.style.display = "block";
+    } else {
+      fold.style.display = "none";
+    }
+    
 other links:
 https://www.geeksforgeeks.org/css/minification-of-css-files/
 https://www.w3schools.com/csS/css3_object-fit.asp
